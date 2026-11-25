@@ -31,9 +31,6 @@
         <button @click="activeTab = 'branding'" :class="activeTab === 'branding' ? 'bg-theme-primary text-white shadow-md font-bold' : 'bg-white dark:bg-slate-800 text-slate-600 dark:text-slate-300 hover:bg-slate-50 dark:hover:bg-slate-700/80 border border-slate-200 dark:border-slate-700'" class="px-4 py-2 rounded-xl transition flex items-center">
             <i class="fa-solid fa-palette mr-2"></i> Visual & Warna Tema
         </button>
-        <button @click="activeTab = 'profile'" :class="activeTab === 'profile' ? 'bg-theme-primary text-white shadow-md font-bold' : 'bg-white dark:bg-slate-800 text-slate-600 dark:text-slate-300 hover:bg-slate-50 dark:hover:bg-slate-700/80 border border-slate-200 dark:border-slate-700'" class="px-4 py-2 rounded-xl transition flex items-center">
-            <i class="fa-solid fa-compass mr-2"></i> Visi, Misi & Tentang
-        </button>
         <button @click="activeTab = 'highlight'" :class="activeTab === 'highlight' ? 'bg-theme-primary text-white shadow-md font-bold' : 'bg-white dark:bg-slate-800 text-slate-600 dark:text-slate-300 hover:bg-slate-50 dark:hover:bg-slate-700/80 border border-slate-200 dark:border-slate-700'" class="px-4 py-2 rounded-xl transition flex items-center">
             <i class="fa-solid fa-star mr-2"></i> Kotak Sorotan Beranda
         </button>
@@ -270,39 +267,6 @@
             <div class="pt-4 border-t">
                 <button type="submit" class="px-6 py-2.5 rounded-xl bg-theme-primary text-white font-bold text-xs uppercase tracking-wider shadow hover:opacity-90 transition">
                     Simpan Perubahan Visual
-                </button>
-            </div>
-        </div>
-
-        <!-- TAB 4: VISI, MISI & TENTANG -->
-        <div x-show="activeTab === 'profile'" class="bg-white rounded-2xl p-6 sm:p-8 shadow-sm border border-slate-200 space-y-6" style="display: none;">
-            <h3 class="text-base font-bold text-slate-900 border-b pb-3">Profil, Visi & Misi Divisi</h3>
-
-            <div class="space-y-4">
-                <div class="space-y-1">
-                    <label class="text-xs font-bold text-slate-700">Judul Tentang Kami</label>
-                    <input type="text" name="about_title" value="{{ old('about_title', $settings['about_title'] ?? 'Tentang Kami') }}" class="w-full px-4 py-2.5 rounded-xl text-xs bg-slate-50 border border-slate-200 focus:outline-none focus:ring-2 focus:ring-sky-500 focus:bg-white">
-                </div>
-
-                <div class="space-y-1">
-                    <label class="text-xs font-bold text-slate-700">Deskripsi Lengkap / Sejarah Singkat Divisi</label>
-                    <textarea name="about_description" rows="5" class="w-full px-4 py-2.5 rounded-xl text-xs bg-slate-50 border border-slate-200 focus:outline-none focus:ring-2 focus:ring-sky-500 focus:bg-white">{{ old('about_description', $settings['about_description'] ?? '') }}</textarea>
-                </div>
-
-                <div class="space-y-1">
-                    <label class="text-xs font-bold text-slate-700">Visi Divisi</label>
-                    <textarea name="vision" rows="3" class="w-full px-4 py-2.5 rounded-xl text-xs bg-slate-50 border border-slate-200 focus:outline-none focus:ring-2 focus:ring-sky-500 focus:bg-white">{{ old('vision', $settings['vision'] ?? '') }}</textarea>
-                </div>
-
-                <div class="space-y-1">
-                    <label class="text-xs font-bold text-slate-700">Misi Divisi (Dapat dibuat poin 1, 2, 3)</label>
-                    <textarea name="mission" rows="6" class="w-full px-4 py-2.5 rounded-xl text-xs bg-slate-50 border border-slate-200 focus:outline-none focus:ring-2 focus:ring-sky-500 focus:bg-white">{{ old('mission', $settings['mission'] ?? '') }}</textarea>
-                </div>
-            </div>
-
-            <div class="pt-4 border-t">
-                <button type="submit" class="px-6 py-2.5 rounded-xl bg-theme-primary text-white font-bold text-xs uppercase tracking-wider shadow hover:opacity-90 transition">
-                    Simpan Visi Misi
                 </button>
             </div>
         </div>
