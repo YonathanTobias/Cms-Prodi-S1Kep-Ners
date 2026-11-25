@@ -82,9 +82,9 @@ class DatabaseSeeder extends Seeder
             'parent_institution' => 'STIKES Panti Waluya Malang',
             
             // Visual & Branding
-            'theme_primary_color' => '#0284c7', // Sky-600 (Karakter Keperawatan Profesional)
-            'theme_secondary_color' => '#0369a1', // Sky-700
-            'theme_accent_color' => '#059669', // Emerald-600
+            'theme_primary_color' => '#c2410c', // Orange Tua (Warna Identitas Keperawatan & Ners)
+            'theme_secondary_color' => '#9a3412', // Dark Orange / Rust
+            'theme_accent_color' => '#ea580c', // Orange-600
             'logo_url' => '',
             'hero_banner_title' => 'Program Studi S1 Keperawatan & Pendidikan Profesi Ners',
             'hero_banner_subtitle' => 'Mencetak Ners profesional, unggul dalam asuhan keperawatan holistik, serta berdaya saing global berlandaskan kasih.',

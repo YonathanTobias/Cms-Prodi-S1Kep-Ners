@@ -255,7 +255,7 @@ class SettingController extends Controller
             'keperawatan_ners' => [
                 'name' => 'PRODI S1 Keperawatan & Profesi Ners',
                 'badge' => 'Program Studi',
-                'color' => '#ca8a04',
+                'color' => '#c2410c',
                 'icon' => 'fa-solid fa-user-nurse',
                 'description' => 'Preset untuk Program Studi S1 Keperawatan dan Pendidikan Profesi Ners (1 Web Terpadu).',
                 'settings' => [
@@ -265,8 +265,8 @@ class SettingController extends Controller
                     'division_acronym' => 'KEP-NERS',
                     'division_icon' => 'fa-solid fa-user-nurse',
                     'division_tagline' => 'Mencetak Perawat Profesional Beretika, Unggul dalam Asuhan Geriatri & Gawat Darurat',
-                    'theme_primary_color' => '#ca8a04', // Golden Yellow
-                    'theme_secondary_color' => '#a16207',
+                    'theme_primary_color' => '#c2410c', // Orange Tua (Identitas Keperawatan & Ners)
+                    'theme_secondary_color' => '#9a3412', // Dark Burnt Orange
                     'hero_banner_title' => 'Pendidikan Sarjana Keperawatan & Profesi Ners Terpadu',
                     'hero_banner_subtitle' => 'Pendidikan terintegrasi tahap akademik (S1) dan profesi (Ners) dengan laboratorium OSCE/RS simulasi modern.',
                     'about_title' => 'Profil Program Studi S1 Keperawatan & Profesi Ners',

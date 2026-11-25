@@ -15,8 +15,8 @@
 
     <style>
         :root {
-            --color-primary: {{ get_setting('theme_primary_color', '#0e7490') }};
-            --color-secondary: {{ get_setting('theme_secondary_color', '#0369a1') }};
+            --color-primary: {{ get_setting('theme_primary_color', '#c2410c') }};
+            --color-secondary: {{ get_setting('theme_secondary_color', '#9a3412') }};
         }
         .bg-theme-primary { background-color: var(--color-primary); }
     </style>
